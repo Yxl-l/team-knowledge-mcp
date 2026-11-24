@@ -1,0 +1,30 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-11-24T16:22:05.065+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] o.t.mcp.KnowledgeBaseApplication         : Starting KnowledgeBaseApplication v0.1.0 using Java 17.0.12 with PID 34480 (E:\yxl\java\team-knowledge-mcp\target\team-knowledge-mcp-0.1.0.jar started by Dell in E:\yxl\java\team-knowledge-mcp)
+2026-11-24T16:22:05.072+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] o.t.mcp.KnowledgeBaseApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-11-24T16:22:06.831+08:00  WARN 34480 --- [team-knowledge-mcp] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-24T16:22:07.023+08:00  WARN 34480 --- [team-knowledge-mcp] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-24T16:22:07.042+08:00  WARN 34480 --- [team-knowledge-mcp] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-11-24T16:22:07.890+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 58608 (http)
+2026-11-24T16:22:07.929+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-24T16:22:07.929+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-24T16:22:07.983+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2807 ms
+2026-11-24T16:22:10.235+08:00  WARN 34480 --- [team-knowledge-mcp] [           main] o.s.a.m.a.p.tool.SyncMcpToolProvider     : No tool methods found in the provided tool objects: []
+2026-11-24T16:22:10.786+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-11-24T16:22:10.885+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 58608 (http) with context path '/'
+2026-11-24T16:22:10.897+08:00  INFO 34480 --- [team-knowledge-mcp] [           main] o.t.mcp.KnowledgeBaseApplication         : Started KnowledgeBaseApplication in 6.88 seconds (process running for 7.915)
+2026-11-24T16:22:12.054+08:00  INFO 34480 --- [team-knowledge-mcp] [.1-58608-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-24T16:22:12.055+08:00  INFO 34480 --- [team-knowledge-mcp] [.1-58608-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-24T16:22:12.057+08:00  INFO 34480 --- [team-knowledge-mcp] [.1-58608-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-24T16:22:12.130+08:00  INFO 34480 --- [team-knowledge-mcp] [.1-58608-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-24T16:22:12.163+08:00  INFO 34480 --- [team-knowledge-mcp] [.1-58608-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-24T16:22:12.677+08:00  INFO 34480 --- [team-knowledge-mcp] [.1-58608-exec-2] i.m.server.McpAsyncServer                : Client initialize request - Protocol: 2025-11-25, Capabilities: ClientCapabilities[experimental=null, roots=null, sampling=null, elicitation=null], Info: Implementation[name=public-release-smoke, title=null, version=1.0, description=null, icons=null, websiteUrl=null]
+2026-11-24T16:22:12.965+08:00  INFO 34480 --- [team-knowledge-mcp] [.1-58608-exec-1] o.teamknowledge.mcp.mcp.KnowledgeTools   : mcp_call request_id=de22235d-cfa9-4264-b51b-b0b33c173636 tool=save outcome=REVIEW_REQUIRED elapsed_ms=117

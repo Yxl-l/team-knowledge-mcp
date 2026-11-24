@@ -1,0 +1,14 @@
+{
+  "idempotency_key": "demo-bug-001",
+  "scope": {"system_code":"DEMO","module_name":"example-module","customer_code":"DEMO-CUSTOMER","product_version":"1.0","git_branch":"main","db_vendor":"POSTGRESQL"},
+  "type": "BUG",
+  "authority": "EXPERIENCE",
+  "title": "虚构示例：查询条件遗漏导致列表和导出不一致",
+  "body": "演示资料：现象为列表与导出集合不同。根因仍待确认，建议核对权限范围、时间边界和主键集合。本条不是实际业务修复结果。",
+  "verification": {"status":"UNVERIFIED","claims":[],"checks":[]},
+  "evidence": [{"repo_id":"demo","source_path":"docs/demo-bug.md","revision_kind":"DOCUMENT","content_hash":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
+  "symbols": ["ExampleService","example_table"],
+  "relations": [],
+  "change_reason": "新增虚构演示记录",
+  "lifecycle": "ACTIVE"
+}

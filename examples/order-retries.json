@@ -1,0 +1,31 @@
+{
+  "idempotency_key": "example-order-retries-v1",
+  "scope": {
+    "system_code": "ORDER-SERVICE",
+    "module_name": "checkout",
+    "customer_code": "GLOBAL",
+    "product_version": "1.0",
+    "git_branch": "main",
+    "db_vendor": "POSTGRESQL"
+  },
+  "type": "DECISION",
+  "title": "Order retries and idempotency",
+  "body": "# Order retry behavior\n\nThis fictional order service retries transient upstream failures with exponential backoff. A successful retry uses the original idempotency key to avoid creating a second order.",
+  "verification": {
+    "status": "UNVERIFIED",
+    "claims": [],
+    "checks": []
+  },
+  "evidence": [
+    {
+      "repo_id": "example-team",
+      "source_path": "examples/order-retries.md",
+      "revision_kind": "DOCUMENT",
+      "content_hash": "71b8b5bc3bbfe4a8a129b08b38f64a8433a7fab854cb75836d9378b2493b3416"
+    }
+  ],
+  "symbols": [
+    "idempotency"
+  ],
+  "change_reason": "Import a fictional quickstart record"
+}

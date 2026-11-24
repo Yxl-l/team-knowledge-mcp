@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.teamknowledge.mcp.service.DatabaseFailuresTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s -- in org.teamknowledge.mcp.service.DatabaseFailuresTest

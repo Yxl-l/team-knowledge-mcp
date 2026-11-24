@@ -1,0 +1,15 @@
+{
+  "context": {
+    "scope": {
+      "system_code": "ORDER-SERVICE",
+      "module_name": "checkout",
+      "customer_code": "GLOBAL",
+      "product_version": "1.0",
+      "git_branch": "main",
+      "db_vendor": "POSTGRESQL"
+    }
+  },
+  "query": "idempotency",
+  "include_unverified": true,
+  "limit": 5
+}

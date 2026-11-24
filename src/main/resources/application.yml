@@ -1,0 +1,68 @@
+spring:
+  config:
+    import: "optional:file:./.env[.properties]"
+  application:
+    name: team-knowledge-mcp
+  ai:
+    mcp:
+      server:
+        name: team-knowledge-mcp
+        version: 0.1.0
+        type: SYNC
+        protocol: STREAMABLE
+        tool-callback-converter: false
+        streamable-http:
+          mcp-endpoint: /mcp
+        capabilities:
+          resource: false
+          prompt: false
+          completion: false
+  datasource:
+    url: "${TEAM_KB_DB_URL:jdbc:postgresql://127.0.0.1:55432/team_knowledge?connectTimeout=5&socketTimeout=20&options=-c%20statement_timeout=3000}"
+    username: "${TEAM_KB_DB_USER:team_knowledge}"
+    password: "${TEAM_KB_DB_PASSWORD:}"
+    hikari:
+      maximum-pool-size: 3
+      minimum-idle: 0
+      connection-timeout: 3000
+      initialization-fail-timeout: -1
+  flyway:
+    enabled: "${TEAM_KB_MIGRATE:false}"
+    default-schema: public
+    schemas: public
+    create-schemas: false
+    clean-disabled: true
+  sql:
+    init:
+      mode: never
+
+server:
+  address: "${TEAM_KB_BIND_ADDRESS:127.0.0.1}"
+  port: "${TEAM_KB_PORT:18765}"
+  tomcat:
+    threads:
+      max: 12
+      min-spare: 2
+  max-http-request-header-size: 8KB
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+  health:
+    db:
+      enabled: true
+
+team:
+  kb:
+    token: "${TEAM_KB_MCP_TOKEN:}"
+    write-enabled: "${TEAM_KB_WRITE_ENABLED:false}"
+    allowed-hosts: "${TEAM_KB_ALLOWED_HOSTS:}"
+
+logging:
+  level:
+    org.springframework.ai.mcp: WARN

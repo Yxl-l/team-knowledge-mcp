@@ -1,0 +1,8 @@
+org\teamknowledge\mcp\config\LoopbackGuardTest.class
+org\teamknowledge\mcp\service\KnowledgeWriteReviewTest.class
+org\teamknowledge\mcp\service\KnowledgeServiceTest.class
+org\teamknowledge\mcp\service\DatabaseFailuresTest.class
+org\teamknowledge\mcp\service\KnowledgePolicyTest.class
+org\teamknowledge\mcp\service\TextIndexTest.class
+org\teamknowledge\mcp\service\PostgresIntegrationTest.class
+org\teamknowledge\mcp\config\McpContractTest.class

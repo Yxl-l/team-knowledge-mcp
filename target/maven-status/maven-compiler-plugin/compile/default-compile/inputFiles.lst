@@ -1,0 +1,14 @@
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\admin\AdminCommand.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\admin\ReindexCommand.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\config\LoopbackGuard.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\config\McpConfiguration.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\KnowledgeBaseApplication.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\mcp\KnowledgeTools.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\model\KnowledgeModels.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\persistence\KnowledgeRepository.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\service\DatabaseFailures.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\service\JsonCodec.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\service\KnowledgeException.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\service\KnowledgePolicy.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\service\KnowledgeService.java
+E:\yxl\java\team-knowledge-mcp\src\main\java\org\teamknowledge\mcp\service\TextIndex.java

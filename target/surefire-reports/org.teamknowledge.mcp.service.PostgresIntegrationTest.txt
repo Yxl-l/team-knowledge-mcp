@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.teamknowledge.mcp.service.PostgresIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.539 s -- in org.teamknowledge.mcp.service.PostgresIntegrationTest
