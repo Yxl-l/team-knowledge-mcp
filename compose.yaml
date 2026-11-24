@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: team_knowledge
+      POSTGRES_USER: team_knowledge
+      POSTGRES_PASSWORD: ${TEAM_KB_DB_PASSWORD:?Set TEAM_KB_DB_PASSWORD in .env}
+    ports:
+      - "127.0.0.1:55432:5432"
+    volumes:
+      - knowledge-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U team_knowledge -d team_knowledge"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+volumes:
+  knowledge-data:
